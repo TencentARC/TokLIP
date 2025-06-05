@@ -3,7 +3,7 @@
 <h5 align="center"> 
 
 [![arXiv](https://img.shields.io/badge/TokLIP-2505.05422-b31b1b.svg?logo=arXiv)](https://arxiv.org/abs/2505.05422)
-[![GitHub](https://img.shields.io/badge/GitHub-Code-green?logo=github)](https://github.com/TencentARC/VideoPainter)
+[![GitHub](https://img.shields.io/badge/GitHub-Code-green?logo=github)](https://github.com/TencentARC/TokLIP)
 [![HuggingFace](https://img.shields.io/badge/🤗%20Model-Huggingface-yellow)](https://huggingface.co/TencentARC/TokLIP)
 [![License](https://img.shields.io/badge/⚖️%20Code%20License-Other-blue)](https://github.com/TencentARC/TokLIP/blob/main/LICENSE)
  <br>
