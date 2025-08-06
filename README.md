@@ -16,6 +16,7 @@ Your star means a lot for us to develop this project! ⭐⭐⭐
 
 
 ## 📰 News
+* [2025/08/05] 🔥 We release the training code!
 * [2025/06/05] 🔥 We release the code and models!
 * [2025/05/09] 🚀 Our paper is available on arXiv!
 
@@ -50,7 +51,21 @@ pip install -r requirements.txt
 | TokLIP-S |    256     |  76.4   |   64.06   |   48.46   | [🤗 TokLIP_S_256](https://huggingface.co/TencentARC/TokLIP/blob/main/TokLIP_S_256.pt) |
 | TokLIP-L |    384     |  80.0   |   68.00   |   52.87   | [🤗 TokLIP_L_384](https://huggingface.co/TencentARC/TokLIP/blob/main/TokLIP_L_384.pt) |
 
-We are current working on TokLIP-XL with 512x512 resolution and it will be released soon!
+TokLIP-XL with 512x512 resolution will be released soon!
+
+
+### Training
+
+1. Please refer to [img2dataset](https://github.com/rom1504/img2dataset) to prepare the WebDataset required for training. You may choose datasets such as **CC3M**, **CC12M**, or **LAION**.
+
+2. Prepare the teacher models using `src/covert.py`:
+   ```bash
+   cd src
+   TIMM_MODEL='original' python covert.py --model_name 'ViT-SO400M-16-SigLIP2-256' --save_path './model/siglip2-so400m-vit-l16-256.pt'
+   TIMM_MODEL='original' python covert.py --model_name 'ViT-SO400M-16-SigLIP2-384' --save_path './model/siglip2-so400m-vit-l16-384.pt'
+   ```
+3. Train TokLIP using the scripts `src\train_toklip_256.sh` and `src\train_toklip_384.sh`. You need to set `--train-data` and `--train-num-samples` arguments accordingly.
+
 
 ### Evaluation
 
@@ -75,7 +90,7 @@ We provide `build_toklip_encoder` function in `src/create_toklip.py`, you could 
 
 
 ## 🔜 TODOs
-- [ ] Release training codes.
+- [x] Release training codes.
 - [ ] Release TokLIP-XL with 512 resolution.
 
 
