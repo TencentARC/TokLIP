@@ -10,12 +10,13 @@
 
 </h5>
 
-Welcome to the official code repository for "[**TokLIP: Marry Visual Tokens to CLIP for Multimodal Comprehension and Generation**](https://arxiv.org/abs/2505.05422)".
+Welcome to the official code repository for "[**TokLIP: Marry Visual Tokens to CLIP for Multimodal Comprehension and Generation (IJCV)**](https://arxiv.org/abs/2505.05422)".
 
 Your star means a lot to us in developing this project! ⭐⭐⭐
 
 
 ## 📰 News
+* [2026/09/30] 🎉 Congratulations!! TokLIP is finally accepted to IJCV after such a long journey! 🎉
 * [2025/08/18] 🚀 Check our latest results on arXiv ([PDF](https://arxiv.org/pdf/2505.05422))!
 * [2025/08/18] 🔥 We release TokLIP XL with 512 resolution [🤗 TokLIP_XL_512](https://huggingface.co/TencentARC/TokLIP/blob/main/TokLIP_XL_512.pt)!
 * [2025/08/05] 🔥 We release the training code!
